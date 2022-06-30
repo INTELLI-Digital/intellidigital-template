@@ -5,8 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <h2>Login</h2>
+    <div class="signUp_bg">
+      <div class="container px-2 mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+          <div class="img hidden md:block">
+            <img src="./assets/images/signup/signUp.svg" alt="" />
+          </div>
+          <div class="signUp text-center max-w-[350px] mx-auto">
+            <h2 class="font-semibold text-2xl text-[#393e50] mb-3">Sign up</h2>
+            <p class="font-normal text-base text-[#393E5066] mb-16">
+              Discover a better way of finding product with INTELLI Digital
+            </p>
+
+            <form action="">
+              <div class="">
+                <div class="relative">
+                  <input
+                    class="inline-block w-full p-4 leading-6 text-sm font-normal bg-[#F9F9F9] rounded pl-[54px] py-[9px] appearance-none custom_input"
+                    placeholder="Type you name"
+                    type="text"
+                  />
+
+                  <div
+                    class="absolute inset-y-0 left-0 flex items-center pointer-events-none"
+                  >
+                    <svg
+                      class="absolute left-[10px] z-10 bg-white"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="24" height="24" fill="white" />
+                      <path
+                        d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z"
+                        stroke="#009DAE"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16.5 2.25V5.25"
+                        stroke="#009DAE"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.5 2.25V5.25"
+                        stroke="#009DAE"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M4 8.25H20"
+                        stroke="#009DAE"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <rect x="7" y="11" width="2" height="2" fill="#009DAE" />
+                      <rect x="11" y="11" width="2" height="2" fill="#009DAE" />
+                      <rect x="15" y="11" width="2" height="2" fill="#009DAE" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-6">
+                <input
+                  class="inline-block w-full p-4 leading-6 text-sm font-normal bg-[#F9F9F9] rounded"
+                  type="email"
+                  placeholder="Enter your e-mail"
+                />
+              </div>
+              <div class="mb-6">
+                <input
+                  class="inline-block w-full p-4 leading-6 text-sm font-normal bg-[#F9F9F9] rounded"
+                  type="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div
+                class="flex flex-wrap -mx-4 mb-6 items-center justify-between"
+              >
+                <div class="w-full lg:w-auto px-4 mb-4 lg:mb-0">
+                  <label for="">
+                    <input type="checkbox" />
+                    <span class="ml-1 font-extrabold">Remember me</span>
+                  </label>
+                </div>
+                <div class="w-full lg:w-auto px-4">
+                  <a
+                    class="inline-block font-extrabold hover:underline"
+                    href="#"
+                    >Forgot your password?</a
+                  >
+                </div>
+              </div>
+              <button
+                class="inline-block w-full py-4 px-6 mb-6 text-center text-lg leading-6 text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200"
+              >
+                Sign in
+              </button>
+              <p class="text-center font-extrabold">
+                Don&rsquo;t have an account?
+                <a class="text-red-500 hover:underline" href="#">Sign up</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
