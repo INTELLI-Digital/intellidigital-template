@@ -62,12 +62,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .styled-checkbox + label:before {
   content: "";
-  margin-right: 10px;
+  /* margin-right: 10px; */
   display: inline-block;
   vertical-align: text-top;
+  border-radius: 1px;
   width: 20px;
   height: 20px;
   background: linear-gradient(248.46deg, #026f86 14.17%, #0095c0 85.87%);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
 }
 .styled-checkbox:hover + label:before {
   background: linear-gradient(248.46deg, #026f86 14.17%, #0095c0 85.87%);
