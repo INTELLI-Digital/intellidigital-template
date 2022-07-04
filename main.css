@@ -98,7 +98,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* custon checkbox */
 
 /* responsive start */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .body_mob {
     background: #fff !important;
   }
