@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="min-h-screen py-6 flex flex-col justify-center">
+        <section class="xl:max-w-[1320px] container mx-auto space-y-8">
+          <div
+            style=""
+            class="flex flex-col xl:flex-row items-stretch justify-center w-full space-x-12"
+            x-data="{tab: 1}"
+          >
+            <!-- tabpart -->
+            <div
+              class="flex flex-row xl:flex-col justify-center w-full xl:w-1/5 space-y-4 px-4 overflow-x-auto py-5 gap-10"
+            >
+              <div
+                class="profile flex flex-col items-center justify-center gap-[10px] hidden xl:block"
+              >
+                <div class="img">
+                  <img
+                    src="../assets/images/profile/avatar.png"
+                    alt=""
+                    class="w-[50px] h-[50px] mx-auto"
+                  />
+                </div>
+                <h2 class="font-medium text-sm xl:text-base text-[#393e50]">
+                  Md. Sadman Sakib Jisan
+                </h2>
+                <p class="font-medium text-xs text-[#393E5066]">
+                  ssjisan.dev@gmail.com
+                </p>
+              </div>
+              <a
+                class="text-sm"
+                :class="{'z-20 border-b xl:border-b-0 border-l-0 border-[#0095C0] font-bold text-[#0095C0]': tab === 1,' transform -translate-x-2': tab !== 1}"
+                href="#"
+                @click.prevent="tab = 1"
+              >
+                <span class="flex items-center">
+                  <svg
+                    class="mr-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 1, ' stroke-[#393E50]': tab !== 1}"
+                      d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 1, ' stroke-[#393E50]': tab !== 1}"
+                      d="M2.90625 20.2499C3.82775 18.6534 5.15328 17.3277 6.74958 16.406C8.34588 15.4843 10.1567 14.999 12 14.999C13.8433 14.999 15.6541 15.4843 17.2504 16.406C18.8467 17.3277 20.1722 18.6534 21.0938 20.2499"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  Profile
+                </span>
+              </a>
+              <a
+                class="text-sm"
+                :class="{'z-20 border-b xl:border-b-0 border-l-0 border-[#0095C0] font-bold text-[#0095C0]': tab === 2, ' transform -translate-x-2': tab !== 2}"
+                href="#"
+                @click.prevent="tab = 2"
+              >
+                <span class="flex items-center">
+                  <svg
+                    class="mr-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 2, ' stroke-[#393E50]': tab !== 2}"
+                      d="M12 10.125V20.25"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 2, ' stroke-[#393E50]': tab !== 2}"
+                      d="M12 3.75V6.375"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 2, ' stroke-[#393E50]': tab !== 2}"
+                      d="M12 10.125C13.0355 10.125 13.875 9.28553 13.875 8.25C13.875 7.21447 13.0355 6.375 12 6.375C10.9645 6.375 10.125 7.21447 10.125 8.25C10.125 9.28553 10.9645 10.125 12 10.125Z"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 2, ' stroke-[#393E50]': tab !== 2}"
+                      d="M18.75 17.625V20.25"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 2, ' stroke-[#393E50]': tab !== 2}"
+                      d="M18.75 3.75V13.875"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 2, ' stroke-[#393E50]': tab !== 2}"
+                      d="M18.75 17.625C19.7855 17.625 20.625 16.7855 20.625 15.75C20.625 14.7145 19.7855 13.875 18.75 13.875C17.7145 13.875 16.875 14.7145 16.875 15.75C16.875 16.7855 17.7145 17.625 18.75 17.625Z"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 2, ' stroke-[#393E50]': tab !== 2}"
+                      d="M5.25 14.625V20.25"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 2, ' stroke-[#393E50]': tab !== 2}"
+                      d="M5.25 3.75V10.875"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 2, ' stroke-[#393E50]': tab !== 2}"
+                      d="M5.25 14.625C6.28553 14.625 7.125 13.7855 7.125 12.75C7.125 11.7145 6.28553 10.875 5.25 10.875C4.21447 10.875 3.375 11.7145 3.375 12.75C3.375 13.7855 4.21447 14.625 5.25 14.625Z"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  Settings
+                </span>
+              </a>
+              <a
+                class="text-sm"
+                :class="{'z-20 border-b xl:border-b-0 border-l-0 border-[#0095C0] font-bold text-[#0095C0]': tab === 3, ' transform -translate-x-2': tab !== 3}"
+                href="#"
+                @click.prevent="tab = 3"
+              >
+                <span class="flex items-center">
+                  <svg
+                    class="mr-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 3, ' stroke-[#393E50]': tab !== 3}"
+                      d="M21 5.25H3C2.58579 5.25 2.25 5.58579 2.25 6V18C2.25 18.4142 2.58579 18.75 3 18.75H21C21.4142 18.75 21.75 18.4142 21.75 18V6C21.75 5.58579 21.4142 5.25 21 5.25Z"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 3, ' stroke-[#393E50]': tab !== 3}"
+                      d="M15.75 15.75H18.75"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 3, ' stroke-[#393E50]': tab !== 3}"
+                      d="M11.25 15.75H12.75"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 3, ' stroke-[#393E50]': tab !== 3}"
+                      d="M2.25 9.08398H21.75"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  Purchases
+                </span>
+              </a>
+              <a
+                class="text-sm"
+                :class="{'z-20 border-b xl:border-b-0 border-l-0 border-[#0095C0] font-bold text-[#0095C0]': tab === 4, ' transform -translate-x-2': tab !== 4}"
+                href="#"
+                @click.prevent="tab = 4"
+              >
+                <span class="flex items-center">
+                  <svg
+                    :class="{'stroke-[#0095C0]': tab === 4, ' stroke-[#393E50]': tab !== 4}"
+                    class="mr-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 4, ' stroke-[#393E50]': tab !== 4}"
+                      d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'stroke-[#0095C0]': tab === 4, ' stroke-[#393E50]': tab !== 4}"
+                      d="M11.25 11.25H12V16.5H12.75"
+                      stroke="#393E50"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      :class="{'fill-[#0095C0]': tab === 4, ' fill-[#393E50]': tab !== 4}"
+                      d="M12.875 7.875C12.875 8.4618 12.3993 8.9375 11.8125 8.9375C11.2257 8.9375 10.75 8.4618 10.75 7.875C10.75 7.2882 11.2257 6.8125 11.8125 6.8125C12.3993 6.8125 12.875 7.2882 12.875 7.875Z"
+                      fill="black"
+                      stroke="#393E50"
+                      stroke-width="0.125"
+                    />
+                  </svg>
+
+                  Support
+                </span>
+              </a>
+            </div>
+            <!-- tabpart -->
+
+            <!-- tab content -->
+            <div
+              style="
+                background: linear-gradient(
+                  248.46deg,
+                  rgba(2, 111, 134, 0.05) 14.17%,
+                  rgba(0, 149, 192, 0.05) 85.87%
+                );
+                height: calc(100% - 1rem);
+                margin-left: 0px;
+              "
+              class="w-full xl:w-3/4 py-8 xl:py-16 px-8 xl:px-28 body_mob"
+            >
+              <div class="space-y-1 xl:space-y-6" x-show="tab === 1">
+                <h3
+                  class="font-medium text-2xl text-center xl:text-left xl:text-[40px] leading-[48px] text-[#393E50]"
+                  x-show="tab === 1"
+                  x-transition:enter="transition duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Profile Details
+                </h3>
+                <p
+                  class="font-normal text-sm text-center xl:text-left xl:text-base leading-[19px] text-[#393E50]/30 xl:text-[#393E50]/60"
+                  x-show="tab === 1"
+                  x-transition:enter="transition delay-100 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  View and update your account details, profile and more.
+                </p>
+                <div
+                  class="bg-white rounded-2xl py-5 px-[0px] xl:px-[54px]"
+                  x-show="tab === 1"
+                  x-transition:enter="transition delay-200 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  <h2
+                    class="font-medium text-xl xl:text-2xl leading-[29px] text-[#393E50] mb-6 xl:mb-10 text-center xl:text-left"
+                  >
+                    Basic information
+                  </h2>
+                  <form
+                    action=""
+                    class="flex items-center justify-between flex-col-reverse xl:flex-row gap-10"
+                  >
+                    <div class="input_feild w-full xl:w-9/12">
+                      <div
+                        class="form-item mb-6 flex items-start xl:items-center justify-between flex-col xl:flex-row"
+                      >
+                        <label
+                          class="font-normal text-sm xl:text-base leading-[19px] text-[#393E50] mb-4 xl:mb-0"
+                          for="f_name"
+                          >First Name</label
+                        >
+                        <input
+                          class="border w-full xl:w-2/3 py-3 pl-5 border-[#393E5033] rounded-[10px] text-sm xl:text-base"
+                          type="text"
+                          name="f_name"
+                          id="f_name"
+                          placeholder="Type Your First Name"
+                        />
+                      </div>
+                      <div
+                        class="form-item mb-6 flex items-start xl:items-center justify-between flex-col xl:flex-row"
+                      >
+                        <label
+                          class="font-normal text-sm xl:text-base leading-[19px] text-[#393E50] mb-4 xl:mb-0"
+                          for="l_name"
+                          >Last Name</label
+                        >
+                        <input
+                          class="border w-full xl:w-2/3 py-3 pl-5 border-[#393E5033] rounded-[10px] text-sm xl:text-base"
+                          type="text"
+                          name="l_name"
+                          id="l_name"
+                          placeholder="Type Your Last Name"
+                        />
+                      </div>
+                      <div
+                        class="form-item mb-6 flex items-start xl:items-center justify-between flex-col xl:flex-row"
+                      >
+                        <label
+                          class="font-normal text-sm xl:text-base leading-[19px] text-[#393E50] mb-4 xl:mb-0"
+                          for="phone"
+                          >Phone Number</label
+                        >
+                        <input
+                          class="border w-full xl:w-2/3 py-3 pl-5 border-[#393E5033] rounded-[10px] text-sm xl:text-base"
+                          type="text"
+                          name="phone"
+                          id="phone"
+                          placeholder="Type Your Phone Number"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center flex-col w-full xl:w-1/4 relative"
+                    >
+                      <h2
+                        class="font-normal text-sm xl:text-base leading-[19px] text-[#393E50]/40"
+                      >
+                        Profile images
+                      </h2>
+                      <div
+                        class="prof_input w-20 h-20 my-6 relative rounded-full"
+                      >
+                        <img
+                          class="w-full h-full object-fill"
+                          src="../assets/images/profile/avatar.png"
+                          alt=""
+                        />
+                        <label
+                          for="dropzone-file"
+                          class="flex flex-col items-center justify-center cursor-pointer w-[30px] h-[30px] absolute right-0 -bottom-0.5"
+                        >
+                          <div
+                            class="flex flex-col items-center justify-center"
+                          >
+                            <svg
+                              width="39"
+                              height="38"
+                              viewBox="0 0 39 38"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g filter="url(#filter0_d_1513_82806)">
+                                <path
+                                  d="M4.91406 15C4.91406 23.2843 11.6298 30 19.9141 30C28.1983 30 34.9141 23.2843 34.9141 15C34.9141 6.71573 28.1983 0 19.9141 0C11.6298 0 4.91406 6.71573 4.91406 15Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M26.1241 21.5175H13.7093C13.38 21.5175 13.0642 21.3867 12.8314 21.1539C12.5986 20.9211 12.4678 20.6053 12.4678 20.276V11.5856C12.4678 11.2564 12.5986 10.9406 12.8314 10.7078C13.0642 10.475 13.38 10.3442 13.7093 10.3442H15.0732C15.7723 10.3442 16.4252 9.99476 16.813 9.41305C17.2008 8.83134 17.8536 8.48193 18.5528 8.48193H21.2806C21.9797 8.48193 22.6326 8.83134 23.0204 9.41305C23.4082 9.99476 24.0611 10.3442 24.7602 10.3442H26.1241C26.4534 10.3442 26.7691 10.475 27.002 10.7078C27.2348 10.9406 27.3656 11.2564 27.3656 11.5856V20.276C27.3656 20.6053 27.2348 20.9211 27.002 21.1539C26.7691 21.3867 26.4534 21.5175 26.1241 21.5175Z"
+                                  fill="white"
+                                  stroke="#0095C0"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M19.9154 18.4138C21.4581 18.4138 22.7088 17.1632 22.7088 15.6205C22.7088 14.0778 21.4581 12.8271 19.9154 12.8271C18.3727 12.8271 17.1221 14.0778 17.1221 15.6205C17.1221 17.1632 18.3727 18.4138 19.9154 18.4138Z"
+                                  fill="white"
+                                  stroke="#0095C0"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </g>
+                              <defs>
+                                <filter
+                                  id="filter0_d_1513_82806"
+                                  x="0.914062"
+                                  y="0"
+                                  width="38"
+                                  height="38"
+                                  filterUnits="userSpaceOnUse"
+                                  color-interpolation-filters="sRGB"
+                                >
+                                  <feFlood
+                                    flood-opacity="0"
+                                    result="BackgroundImageFix"
+                                  />
+                                  <feColorMatrix
+                                    in="SourceAlpha"
+                                    type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                    result="hardAlpha"
+                                  />
+                                  <feOffset dy="4" />
+                                  <feGaussianBlur stdDeviation="2" />
+                                  <feComposite in2="hardAlpha" operator="out" />
+                                  <feColorMatrix
+                                    type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                                  />
+                                  <feBlend
+                                    mode="normal"
+                                    in2="BackgroundImageFix"
+                                    result="effect1_dropShadow_1513_82806"
+                                  />
+                                  <feBlend
+                                    mode="normal"
+                                    in="SourceGraphic"
+                                    in2="effect1_dropShadow_1513_82806"
+                                    result="shape"
+                                  />
+                                </filter>
+                              </defs>
+                            </svg>
+                          </div>
+
+                          <input
+                            id="dropzone-file"
+                            type="file"
+                            class="hidden"
+                          />
+                        </label>
+                      </div>
+
+                      <p
+                        class="font-medium text-xs xl:text-sm text-[#9C0404]/60 leading-[14px]"
+                      >
+                        Remove image
+                      </p>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="bg-white rounded-2xl py-5 px-[0px] xl:px-[54px] mt-10"
+                  x-show="tab === 1"
+                  x-transition:enter="transition delay-200 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  <h2
+                    class="font-medium text-xl xl:text-2xl leading-[29px] text-[#393E50] mb-6 xl:mb-10 text-center xl:text-left"
+                  >
+                    Login information
+                  </h2>
+                  <form action="" class="flex items-center justify-between">
+                    <div class="input_feild w-full">
+                      <div
+                        class="form-item mb-6 flex items-start xl:items-center justify-between flex-col xl:flex-row"
+                      >
+                        <label
+                          class="font-normal text-sm xl:text-base leading-[19px] text-[#393E50] mb-4 xl:mb-0"
+                          for="email"
+                          >Email Address</label
+                        >
+                        <input
+                          class="border w-full xl:w-2/3 py-3 pl-5 border-[#393E5033] rounded-[10px] text-sm xl:text-base"
+                          type="text"
+                          name="email"
+                          id="email"
+                          placeholder="Type Your Email"
+                        />
+                      </div>
+                      <div
+                        class="form-item mb-6 flex items-start xl:items-center justify-between flex-col xl:flex-row"
+                      >
+                        <label
+                          class="font-normal text-sm xl:text-base leading-[19px] text-[#393E50] mb-4 xl:mb-0"
+                          for="password"
+                          >Password</label
+                        >
+                        <input
+                          class="border w-full xl:w-2/3 py-3 pl-5 border-[#393E5033] rounded-[10px] text-sm xl:text-base"
+                          type="password"
+                          name="password"
+                          id="password"
+                          placeholder="Type Your Password"
+                          @visibility.window="$el.type = ($el.type == 'password') ? 'text' : 'password' "
+                        />
+                      </div>
+                      <div
+                        class="flex items-center justify-center xl:justify-end"
+                      >
+                        <button
+                          type="submit"
+                          class="bg-[#0095C033] py-[10px] px-[20px] mt-[37px] xl:mt-0 rounded-xl border border-[#0095C026] font-medium text-sm"
+                        >
+                          <span
+                            style="
+                              background: linear-gradient(
+                                248.46deg,
+                                #026f86 14.17%,
+                                #0095c0 85.87%
+                              );
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent;
+                              background-clip: text;
+                              text-fill-color: transparent;
+                            "
+                            >Edit Password</span
+                          >
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="space-y-6" x-show="tab === 2">
+                <h3
+                  class="font-medium text-2xl text-center xl:text-left xl:text-[40px] leading-[48px] text-[#393E50]"
+                  x-show="tab === 2"
+                  x-transition:enter="transition duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Settings
+                </h3>
+                <p
+                  class="font-normal text-sm text-center xl:text-left xl:text-base leading-[19px] text-[#393E50]/30 xl:text-[#393E50]/60"
+                  x-show="tab === 2"
+                  x-transition:enter="transition delay-100 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  View and update your account details, profile and more.
+                </p>
+                <div
+                  class="bg-white rounded-2xl py-5 px-[0px] xl:px-[54px]"
+                  x-show="tab === 2"
+                  x-transition:enter="transition delay-200 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  <h2
+                    class="font-medium text-xl xl:text-2xl leading-[29px] text-[#393E50] mb-4 text-center xl:text-left"
+                  >
+                    Email Preferences
+                  </h2>
+                  <p
+                    class="font-normal text-sm text-[#393e50]/60 mb-6 xl:mb-10"
+                  >
+                    Choose which emails you receive.
+                  </p>
+                  <div
+                    class="email_preference_item flex items-center justify-between"
+                  >
+                    <div class="prea">
+                      <h3 class="font-normal text-base text-[#393e50]">
+                        Special Offers
+                      </h3>
+                      <p>Get updates on promotions, sales and discounts.</p>
+                    </div>
+                    <div class="switch">
+                      <div
+                        class="p-10 space-y-2"
+                        x-data="{toggle: false, toggle2: false}"
+                      >
+                        <button
+                          class="flex items-center transition ease-in-out duration-300 w-10 h-4 bg-gray-200 rounded-full focus:outline-none opacity-80"
+                          :class="{ 'bg-[#0095C0] opacity-100': toggle2 }"
+                          x-on:click="toggle2 = !toggle2"
+                        >
+                          <div
+                            class="transition ease-in-out duration-300 rounded-full h-5 w-5 bg-white shadow border"
+                            :class="{ 'transform translate-x-full ': toggle2 }"
+                          ></div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <h3
+                  class="text-xl font-bold leading-tight"
+                  x-show="tab === 2"
+                  x-transition:enter="transition duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Settings
+                </h3>
+                <p
+                  class="text-base text-gray-600"
+                  x-show="tab === 2"
+                  x-transition:enter="transition delay-100 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  View and update your account details, profile and more.
+                </p>
+                <p
+                  class="text-xl"
+                  x-show="tab === 2"
+                  x-transition:enter="transition delay-200 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Batman (Ben Affleck) and Superman (Henry Cavill) share the
+                  screen in this Warner Bros./DC Entertainment co-production
+                  penned by David S....
+                </p>
+                <p
+                  class="text-base"
+                  x-show="tab === 2"
+                  x-transition:enter="transition delay-300 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Is this the right batman for me?
+                </p>
+                <a
+                  href="https://twitter.com/smilesharks"
+                  class="inline-flex items-center justify-center px-8 pt-3 pb-2 mt-4 text-lg text-center text-white no-underline bg-blue-500 border-blue-500 cursor-pointer hover:bg-gray-900 rounded-3xl hover:text-white focus-within:bg-blue-500 focus-within:border-blue-500 focus-within:text-white sm:text-base lg:text-lg text-base"
+                  x-show="tab === 2"
+                  x-transition:enter="transition delay-500 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Learn more
+                </a> -->
+              </div>
+
+              <div class="space-y-6" x-show="tab === 3">
+                <h3
+                  class="text-xl font-bold leading-tight"
+                  x-show="tab === 3"
+                  x-transition:enter="transition duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Purchases
+                </h3>
+                <p
+                  class="text-base text-gray-600"
+                  x-show="tab === 3"
+                  x-transition:enter="transition delay-100 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Here your can find all of your purchased product.
+                </p>
+
+                <a
+                  href="https://twitter.com/smilesharks"
+                  class="inline-flex items-center justify-center px-8 pt-3 pb-2 mt-4 text-lg text-center text-white no-underline bg-blue-500 border-blue-500 cursor-pointer hover:bg-gray-900 rounded-3xl hover:text-white focus-within:bg-blue-500 focus-within:border-blue-500 focus-within:text-white sm:text-base lg:text-lg text-base"
+                  x-show="tab === 3"
+                  x-transition:enter="transition delay-500 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Learn more
+                </a>
+              </div>
+
+              <div class="space-y-6" x-show="tab === 4">
+                <h3
+                  class="text-xl font-bold leading-tight"
+                  x-show="tab === 4"
+                  x-transition:enter="transition duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Support
+                </h3>
+                <p
+                  class="text-base text-gray-600"
+                  x-show="tab === 4"
+                  x-transition:enter="transition delay-100 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Your can find some categories.
+                </p>
+                <p
+                  class="text-xl"
+                  x-show="tab === 4"
+                  x-transition:enter="transition delay-200 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Fathom Events, Warner Bros. and DC Comics invite you to a
+                  premiere event when Batman: The Killing Joke comes to...
+                </p>
+                <p
+                  class="text-base"
+                  x-show="tab === 4"
+                  x-transition:enter="transition delay-300 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Is this the right batman for me?
+                </p>
+                <a
+                  href="https://twitter.com/smilesharks"
+                  class="inline-flex items-center justify-center px-8 pt-3 pb-2 mt-4 text-lg text-center text-white no-underline bg-blue-500 border-blue-500 cursor-pointer hover:bg-gray-900 rounded-3xl hover:text-white focus-within:bg-blue-500 focus-within:border-blue-500 focus-within:text-white sm:text-base lg:text-lg text-base"
+                  x-show="tab === 4"
+                  x-transition:enter="transition delay-500 duration-500 transform ease-in"
+                  x-transition:enter-start="opacity-0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+            <!-- tab content -->
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="../assets/js/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/alpine.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

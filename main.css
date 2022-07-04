@@ -96,3 +96,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transform: rotate(45deg);
 }
 /* custon checkbox */
+
+/* responsive start */
+@media (max-width: 768px) {
+  .body_mob {
+    background: #fff !important;
+  }
+}
+/* responsive start */
