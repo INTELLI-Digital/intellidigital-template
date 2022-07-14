@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body class="antialiased">
+    <div
+      id="view"
+      class="h-full container mx-auto grid grid-flow-row lg:grid-flow-col grid-cols-3 gap-4"
+    >
+      <div
+        id="sidebar"
+        class="bg-white xl:h-screen overflow-x-auto col-span-3 lg:col-span-1 lg:max-w-[224px]"
+      >
+        <div class="space-y-6 md:space-y-10 mt-10 space-x-0 xl:space-x-20">
+          <div id="profile" class="space-y-3 hidden lg:block">
+            <img
+              src="https://pbs.twimg.com/profile_images/1467997254929854470/mDYbXoVl_400x400.jpg"
+              alt="Avatar user"
+              class="w-10 md:w-16 rounded-full mx-auto"
+            />
+            <div>
+              <h2
+                class="font-medium text-sm lg:text-base text-[#393e50] text-center"
+              >
+                Md. Sadman Sakib Jisan
+              </h2>
+              <p class="font-medium text-xs text-[#393E5066] text-center">
+                ssjisan.dev@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <div
+            id="menu"
+            class="flex flex-row lg:flex-col py-5 md:justify-center !ml-0"
+          >
+            <a
+              href="#"
+              class="text-sm font-medium text-gray-700 py-2 px-2 rounded-md transition duration-150 ease-in-out flex items-center justify-center lg:justify-start"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M2.90625 20.2499C3.82775 18.6534 5.15328 17.3277 6.74958 16.406C8.34588 15.4843 10.1567 14.999 12 14.999C13.8433 14.999 15.6541 15.4843 17.2504 16.406C18.8467 17.3277 20.1722 18.6534 21.0938 20.2499"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="">Profile</span>
+            </a>
+            <a
+              href="./setting.html"
+              class="text-sm font-medium text-gray-700 py-2 px-2 rounded-md transition duration-150 ease-in-out flex items-center justify-center lg:justify-start"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 10.125V20.25"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 3.75V6.375"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 10.125C13.0355 10.125 13.875 9.28553 13.875 8.25C13.875 7.21447 13.0355 6.375 12 6.375C10.9645 6.375 10.125 7.21447 10.125 8.25C10.125 9.28553 10.9645 10.125 12 10.125Z"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.75 17.625V20.25"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.75 3.75V13.875"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.75 17.625C19.7855 17.625 20.625 16.7855 20.625 15.75C20.625 14.7145 19.7855 13.875 18.75 13.875C17.7145 13.875 16.875 14.7145 16.875 15.75C16.875 16.7855 17.7145 17.625 18.75 17.625Z"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.25 14.625V20.25"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.25 3.75V10.875"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.25 14.625C6.28553 14.625 7.125 13.7855 7.125 12.75C7.125 11.7145 6.28553 10.875 5.25 10.875C4.21447 10.875 3.375 11.7145 3.375 12.75C3.375 13.7855 4.21447 14.625 5.25 14.625Z"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="">Settings</span>
+            </a>
+            <a
+              href="./purchases.html"
+              class="text-sm font-medium text-gray-700 py-2 px-2 rounded-md transition duration-150 ease-in-out flex items-center justify-center lg:justify-start"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 5.25H3C2.58579 5.25 2.25 5.58579 2.25 6V18C2.25 18.4142 2.58579 18.75 3 18.75H21C21.4142 18.75 21.75 18.4142 21.75 18V6C21.75 5.58579 21.4142 5.25 21 5.25Z"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.75 15.75H18.75"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.25 15.75H12.75"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.25 9.08398H21.75"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="">Purchases</span>
+            </a>
+            <a
+              href="./support.html"
+              class="text-sm font-medium text-gray-700 py-2 px-2 active rounded-md transition duration-150 ease-in-out flex items-center justify-center lg:justify-start"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.25 11.25H12V16.5H12.75"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.875 7.875C12.875 8.4618 12.3993 8.9375 11.8125 8.9375C11.2257 8.9375 10.75 8.4618 10.75 7.875C10.75 7.2882 11.2257 6.8125 11.8125 6.8125C12.3993 6.8125 12.875 7.2882 12.875 7.875Z"
+                  fill="black"
+                  stroke="#393E50"
+                  stroke-width="0.125"
+                />
+              </svg>
+              <span class="">Support</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="main_body col-span-3 lg:col-span-2">
+        <div
+          style="
+            background: linear-gradient(
+              248.46deg,
+              rgba(2, 111, 134, 0.05) 14.17%,
+              rgba(0, 149, 192, 0.05) 85.87%
+            );
+            height: calc(100% - 1rem);
+            margin-left: 0px;
+          "
+          class="w-full py-8 lg:py-16 px-0 lg:px-28 body_mob"
+        >
+          <div class="space-y-1 lg:space-y-6">
+            <h3
+              class="font-medium text-center xl:text-left text-[24px] lg:text-[32px] leading-[48px] text-[#393E50] flex items-center justify-center lg:justify-start gap-5"
+            >
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.5 9.75L3 14.25L7.5 18.75"
+                    stroke="#393E50"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21 5.25C21 7.63695 20.0518 9.92613 18.364 11.614C16.6761 13.3018 14.3869 14.25 12 14.25H3"
+                    stroke="#393E50"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              Popular Question
+            </h3>
+            <ol
+              class="list-reset py-2 lg:py-4 rounded flex items-center justify-center lg:justify-start"
+            >
+              <li class="px-2">
+                <a
+                  href="#"
+                  class="no-underline font-normal text-base text-[#393E50]/60"
+                  >support</a
+                >
+              </li>
+              <li class="no-underline font-normal text-base text-[#393E50]/60">
+                /
+              </li>
+              <li class="px-2">
+                <a
+                  href="#"
+                  class="no-underline font-normal text-base text-[#393E50]/60"
+                  >popular question</a
+                >
+              </li>
+            </ol>
+
+            <div
+              id="accordion-collapse"
+              class="lg:max-w-[872px]"
+              data-accordion="collapse"
+            >
+              <!-- accordion-1 -->
+              <h2 id="accordion-collapse-heading-1">
+                <button
+                  type="button"
+                  class="flex items-center justify-between p-5 w-full font-medium text-base text-left text-[#393E50] bg-white rounded-t-2xl"
+                  data-accordion-target="#accordion-collapse-body-1"
+                  aria-expanded="true"
+                  aria-controls="accordion-collapse-body-1"
+                >
+                  <span>What Is Lorem Ipsum and Why Is It Used?</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 shrink-0 rotate-180"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-1"
+                aria-labelledby="accordion-collapse-heading-1"
+              >
+                <div class="p-5 bg-white rounded-b-2xl">
+                  <p
+                    class="mb-2 font-normal text-sm text-[#393e50]/40 leading-5"
+                  >
+                    I am item content. Click edit button to change this text.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper mattis, pulvinar.
+                  </p>
+                </div>
+              </div>
+              <!-- accordion-1 -->
+              <!-- accordion-2 -->
+
+              <h2 id="accordion-collapse-heading-2">
+                <button
+                  type="button"
+                  class="flex items-center justify-between p-5 w-full font-medium text-left text-gray-900 bg-white rounded-t-2xl mt-5 rounded-b-2xl"
+                  data-accordion-target="#accordion-collapse-body-2"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-2"
+                >
+                  <span>What Is Lorem Ipsum and Why Is It Used?</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-2"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-2"
+              >
+                <div class="p-5 bg-white rounded-b-2xl">
+                  <p
+                    class="mb-2 font-normal text-sm text-[#393e50]/40 leading-5"
+                  >
+                    I am item content. Click edit button to change this text.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper mattis, pulvinar.
+                  </p>
+                </div>
+              </div>
+              <!-- accordion-2 -->
+              <!-- accordion-3 -->
+
+              <h2 id="accordion-collapse-heading-3">
+                <button
+                  type="button"
+                  class="flex items-center justify-between p-5 w-full font-medium text-left text-gray-900 bg-white rounded-t-2xl mt-5 rounded-b-2xl"
+                  data-accordion-target="#accordion-collapse-body-3"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-3"
+                >
+                  <span>What Is Lorem Ipsum and Why Is It Used?</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-3"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-3"
+              >
+                <div class="p-5 bg-white rounded-b-2xl">
+                  <p
+                    class="mb-2 font-normal text-sm text-[#393e50]/40 leading-5"
+                  >
+                    I am item content. Click edit button to change this text.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper mattis, pulvinar.
+                  </p>
+                </div>
+              </div>
+              <!-- accordion-3 -->
+              <!-- accordion-4 -->
+              <h2 id="accordion-collapse-heading-4">
+                <button
+                  type="button"
+                  class="flex items-center justify-between p-5 w-full font-medium text-left text-gray-900 bg-white rounded-t-2xl mt-5 rounded-b-2xl"
+                  data-accordion-target="#accordion-collapse-body-4"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-4"
+                >
+                  <span>What Is Lorem Ipsum and Why Is It Used?</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-4"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-4"
+              >
+                <div class="p-5 bg-white rounded-b-2xl">
+                  <p
+                    class="mb-2 font-normal text-sm text-[#393e50]/40 leading-5"
+                  >
+                    I am item content. Click edit button to change this text.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper mattis, pulvinar.
+                  </p>
+                </div>
+              </div>
+              <!-- accordion-4 -->
+              <!-- accordion-5 -->
+              <h2 id="accordion-collapse-heading-5">
+                <button
+                  type="button"
+                  class="flex items-center justify-between p-5 w-full font-medium text-left text-gray-900 bg-white rounded-t-2xl mt-5 rounded-b-2xl"
+                  data-accordion-target="#accordion-collapse-body-5"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-5"
+                >
+                  <span>What Is Lorem Ipsum and Why Is It Used?</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-5"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-5"
+              >
+                <div class="p-5 bg-white rounded-b-2xl">
+                  <p
+                    class="mb-2 font-normal text-sm text-[#393e50]/40 leading-5"
+                  >
+                    I am item content. Click edit button to change this text.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper mattis, pulvinar.
+                  </p>
+                </div>
+              </div>
+              <!-- accordion-5 -->
+              <!-- accordion-6 -->
+              <h2 id="accordion-collapse-heading-6">
+                <button
+                  type="button"
+                  class="flex items-center justify-between p-5 w-full font-medium text-left text-gray-900 bg-white rounded-t-2xl mt-5 rounded-b-2xl"
+                  data-accordion-target="#accordion-collapse-body-6"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-6"
+                >
+                  <span>What Is Lorem Ipsum and Why Is It Used?</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-6"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-6"
+              >
+                <div class="p-5 bg-white rounded-b-2xl">
+                  <p
+                    class="mb-2 font-normal text-sm text-[#393e50]/40 leading-5"
+                  >
+                    I am item content. Click edit button to change this text.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper mattis, pulvinar.
+                  </p>
+                </div>
+              </div>
+              <!-- accordion-6 -->
+              <!-- accordion-7 -->
+              <h2 id="accordion-collapse-heading-7">
+                <button
+                  type="button"
+                  class="flex items-center justify-between p-5 w-full font-medium text-left text-gray-900 bg-white rounded-t-2xl mt-5 rounded-b-2xl"
+                  data-accordion-target="#accordion-collapse-body-7"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-7"
+                >
+                  <span>What Is Lorem Ipsum and Why Is It Used?</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-7"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-7"
+              >
+                <div class="p-5 bg-white rounded-b-2xl">
+                  <p
+                    class="mb-2 font-normal text-sm text-[#393e50]/40 leading-5"
+                  >
+                    I am item content. Click edit button to change this text.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper mattis, pulvinar.
+                  </p>
+                </div>
+              </div>
+              <!-- accordion-7 -->
+              <!-- accordion-8 -->
+              <h2 id="accordion-collapse-heading-8">
+                <button
+                  type="button"
+                  class="flex items-center justify-between p-5 w-full font-medium text-left text-gray-900 bg-white rounded-t-2xl mt-5 rounded-b-2xl"
+                  data-accordion-target="#accordion-collapse-body-8"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-8"
+                >
+                  <span>What Is Lorem Ipsum and Why Is It Used?</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-8"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-8"
+              >
+                <div class="p-5 bg-white rounded-b-2xl">
+                  <p
+                    class="mb-2 font-normal text-sm text-[#393e50]/40 leading-5"
+                  >
+                    I am item content. Click edit button to change this text.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper mattis, pulvinar.
+                  </p>
+                </div>
+              </div>
+              <!-- accordion-8 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="../assets/js/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/alpine.js"></script>
+    <script src="../assets/js/flowbite.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

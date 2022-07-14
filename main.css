@@ -23,6 +23,18 @@ a {
 ul {
   list-style-type: none;
 }
+#menu a:hover {
+  color: #0095c0;
+}
+#menu a:hover svg path {
+  stroke: #0095c0;
+}
+.active {
+  color: #0095c0;
+}
+.active svg path {
+  stroke: #0095c0;
+}
 /* common css */
 
 input::-webkit-calendar-picker-indicator {
@@ -98,7 +110,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* custon checkbox */
 
 /* responsive start */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .body_mob {
     background: #fff !important;
   }

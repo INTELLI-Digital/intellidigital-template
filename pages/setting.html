@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body class="antialiased">
+    <div
+      id="view"
+      class="h-full container mx-auto grid lg:grid-flow-col lg:gap-4"
+    >
+      <div id="sidebar" class="bg-white xl:h-screen overflow-x-auto">
+        <div class="space-y-6 md:space-y-10 mt-10 space-x-0 xl:space-x-20">
+          <div id="profile" class="space-y-3 hidden lg:block">
+            <img
+              src="https://pbs.twimg.com/profile_images/1467997254929854470/mDYbXoVl_400x400.jpg"
+              alt="Avatar user"
+              class="w-10 md:w-16 rounded-full mx-auto"
+            />
+            <div>
+              <h2
+                class="font-medium text-sm lg:text-base text-[#393e50] text-center"
+              >
+                Md. Sadman Sakib Jisan
+              </h2>
+              <p class="font-medium text-xs text-[#393E5066] text-center">
+                ssjisan.dev@gmail.com
+              </p>
+            </div>
+          </div>
+          <div
+            id="menu"
+            class="flex flex-row lg:flex-col py-5 md:justify-center !ml-0"
+          >
+            <a
+              href="#"
+              class="text-sm font-medium text-gray-700 py-2 px-2 rounded-md transition duration-150 ease-in-out flex items-center justify-center lg:justify-start"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M2.90625 20.2499C3.82775 18.6534 5.15328 17.3277 6.74958 16.406C8.34588 15.4843 10.1567 14.999 12 14.999C13.8433 14.999 15.6541 15.4843 17.2504 16.406C18.8467 17.3277 20.1722 18.6534 21.0938 20.2499"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="">Profile</span>
+            </a>
+            <a
+              href="./setting.html"
+              class="text-sm font-medium text-gray-700 py-2 px-2 active rounded-md transition duration-150 ease-in-out flex items-center justify-center lg:justify-start"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 10.125V20.25"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 3.75V6.375"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 10.125C13.0355 10.125 13.875 9.28553 13.875 8.25C13.875 7.21447 13.0355 6.375 12 6.375C10.9645 6.375 10.125 7.21447 10.125 8.25C10.125 9.28553 10.9645 10.125 12 10.125Z"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.75 17.625V20.25"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.75 3.75V13.875"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.75 17.625C19.7855 17.625 20.625 16.7855 20.625 15.75C20.625 14.7145 19.7855 13.875 18.75 13.875C17.7145 13.875 16.875 14.7145 16.875 15.75C16.875 16.7855 17.7145 17.625 18.75 17.625Z"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.25 14.625V20.25"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.25 3.75V10.875"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.25 14.625C6.28553 14.625 7.125 13.7855 7.125 12.75C7.125 11.7145 6.28553 10.875 5.25 10.875C4.21447 10.875 3.375 11.7145 3.375 12.75C3.375 13.7855 4.21447 14.625 5.25 14.625Z"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="">Settings</span>
+            </a>
+            <a
+              href="./purchases.html"
+              class="text-sm font-medium text-gray-700 py-2 px-2 rounded-md transition duration-150 ease-in-out flex items-center justify-center lg:justify-start"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 5.25H3C2.58579 5.25 2.25 5.58579 2.25 6V18C2.25 18.4142 2.58579 18.75 3 18.75H21C21.4142 18.75 21.75 18.4142 21.75 18V6C21.75 5.58579 21.4142 5.25 21 5.25Z"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.75 15.75H18.75"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.25 15.75H12.75"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.25 9.08398H21.75"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="">Purchases</span>
+            </a>
+            <a
+              href="./support.html"
+              class="text-sm font-medium text-gray-700 py-2 px-2 rounded-md transition duration-150 ease-in-out flex items-center justify-center lg:justify-start"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.25 11.25H12V16.5H12.75"
+                  stroke="#393E50"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.875 7.875C12.875 8.4618 12.3993 8.9375 11.8125 8.9375C11.2257 8.9375 10.75 8.4618 10.75 7.875C10.75 7.2882 11.2257 6.8125 11.8125 6.8125C12.3993 6.8125 12.875 7.2882 12.875 7.875Z"
+                  fill="black"
+                  stroke="#393E50"
+                  stroke-width="0.125"
+                />
+              </svg>
+              <span class="">Support</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="main_body">
+        <div
+          style="
+            height: calc(100% - 1rem);
+            background: linear-gradient(
+              248.46deg,
+              rgba(2, 111, 134, 0.05) 14.17%,
+              rgba(0, 149, 192, 0.05) 85.87%
+            );
+            margin-left: 0px;
+          "
+          class="w-full py-8 lg:py-16 px-0 lg:px-28 body_mob"
+        >
+          <div class="space-y-1 lg:space-y-6">
+            <h3
+              class="font-medium text-2xl text-center xl:text-left lg:text-[40px] leading-[48px] text-[#393E50]"
+            >
+              Settings
+            </h3>
+            <p
+              class="font-normal text-sm text-center xl:text-left lg:text-base leading-[19px] text-[#393E50]/30 lg:text-[#393E50]/60"
+            >
+              View and update your account details, profile and more.
+            </p>
+            <div
+              class="bg-white rounded-2xl py-5 px-[0px] lg:px-[54px] mb-4 lg:mb-6"
+            >
+              <h2
+                class="font-medium text-xl lg:text-2xl leading-[29px] text-[#393E50] mb-4 text-center lg:text-left"
+              >
+                Email Preferences
+              </h2>
+              <p
+                class="font-normal text-sm text-[#393e50]/60 mb-6 lg:mb-10 text-center lg:text-left"
+              >
+                Choose which emails you receive.
+              </p>
+              <div
+                class="email_preference_item flex items-center justify-between mb-4 lg:mb-0"
+              >
+                <div class="prea">
+                  <h3 class="font-normal text-base text-[#393e50] mb-[10 ]">
+                    Special Offers
+                  </h3>
+                  <p class="font-normal text-sm text-[#393e50]/60">
+                    Get updates on promotions, sales and discounts.
+                  </p>
+                </div>
+                <div class="switch">
+                  <div
+                    class="p-0 lg:p-10 space-y-2"
+                    x-data="{toggle: false, toggle2: false}"
+                  >
+                    <button
+                      class="flex items-center transition ease-in-out duration-300 w-10 h-4 bg-gray-200 rounded-full focus:outline-none opacity-80"
+                      :class="{ 'bg-[#0095C0] opacity-100': toggle2 }"
+                      x-on:click="toggle2 = !toggle2"
+                    >
+                      <div
+                        class="transition ease-in-out duration-300 rounded-full h-5 w-5 bg-white shadow border"
+                        :class="{ 'transform translate-x-full ': toggle2 }"
+                      ></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="email_preference_item flex items-center justify-between mb-4 lg:mb-0"
+              >
+                <div class="prea">
+                  <h3 class="font-normal text-base text-[#393e50] mb-[10 ]">
+                    Contests and Events
+                  </h3>
+                  <p class="font-normal text-sm text-[#393e50]/60">
+                    Get updates on promotions, sales and discounts.
+                  </p>
+                </div>
+                <div class="switch">
+                  <div
+                    class="p-0 lg:p-10 space-y-2"
+                    x-data="{toggle: false, toggle2: false}"
+                  >
+                    <button
+                      class="flex items-center transition ease-in-out duration-300 w-10 h-4 bg-gray-200 rounded-full focus:outline-none opacity-80"
+                      :class="{ 'bg-[#0095C0] opacity-100': toggle2 }"
+                      x-on:click="toggle2 = !toggle2"
+                    >
+                      <div
+                        class="transition ease-in-out duration-300 rounded-full h-5 w-5 bg-white shadow border"
+                        :class="{ 'transform translate-x-full ': toggle2 }"
+                      ></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="email_preference_item flex items-center justify-between mb-4 lg:mb-0"
+              >
+                <div class="prea">
+                  <h3 class="font-normal text-base text-[#393e50] mb-[10 ]">
+                    New Features and Releases
+                  </h3>
+                  <p class="font-normal text-sm text-[#393e50]/60">
+                    Get updates on promotions, sales and discounts.
+                  </p>
+                </div>
+                <div class="switch">
+                  <div
+                    class="p-0 lg:p-10 space-y-2"
+                    x-data="{toggle: false, toggle2: false}"
+                  >
+                    <button
+                      class="flex items-center transition ease-in-out duration-300 w-10 h-4 bg-gray-200 rounded-full focus:outline-none opacity-80"
+                      :class="{ 'bg-[#0095C0] opacity-100': toggle2 }"
+                      x-on:click="toggle2 = !toggle2"
+                    >
+                      <div
+                        class="transition ease-in-out duration-300 rounded-full h-5 w-5 bg-white shadow border"
+                        :class="{ 'transform translate-x-full ': toggle2 }"
+                      ></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="email_preference_item flex items-center justify-between mb-4 lg:mb-0"
+              >
+                <div class="prea">
+                  <h3 class="font-normal text-base text-[#393e50] mb-[10 ]">
+                    Updates
+                  </h3>
+                  <p class="font-normal text-sm text-[#393e50]/60">
+                    Get updates on promotions, sales and discounts.
+                  </p>
+                </div>
+                <div class="switch">
+                  <div
+                    class="p-0 lg:p-10 space-y-2"
+                    x-data="{toggle: false, toggle2: false}"
+                  >
+                    <button
+                      class="flex items-center transition ease-in-out duration-300 w-10 h-4 bg-gray-200 rounded-full focus:outline-none opacity-80"
+                      :class="{ 'bg-[#0095C0] opacity-100': toggle2 }"
+                      x-on:click="toggle2 = !toggle2"
+                    >
+                      <div
+                        class="transition ease-in-out duration-300 rounded-full h-5 w-5 bg-white shadow border"
+                        :class="{ 'transform translate-x-full ': toggle2 }"
+                      ></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="email_preference_item flex items-center justify-between"
+              >
+                <div class="prea">
+                  <h3 class="font-normal text-base text-[#393e50] mb-[10 ]">
+                    All Emails
+                  </h3>
+                  <p class="font-normal text-sm text-[#393e50]/60">
+                    Get updates on promotions, sales and discounts.
+                  </p>
+                </div>
+                <div class="switch">
+                  <div
+                    class="p-0 lg:p-10 space-y-2"
+                    x-data="{toggle: false, toggle2: false}"
+                  >
+                    <button
+                      class="flex items-center transition ease-in-out duration-300 w-10 h-4 bg-gray-200 rounded-full focus:outline-none opacity-80"
+                      :class="{ 'bg-[#0095C0] opacity-100': toggle2 }"
+                      x-on:click="toggle2 = !toggle2"
+                    >
+                      <div
+                        class="transition ease-in-out duration-300 rounded-full h-5 w-5 bg-white shadow border"
+                        :class="{ 'transform translate-x-full ': toggle2 }"
+                      ></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-2xl py-5 px-[0px] lg:px-[54px]"
+              x-show="tab === 2"
+              x-transition:enter="transition delay-200 duration-500 transform ease-in"
+              x-transition:enter-start="opacity-0"
+            >
+              <h2
+                class="font-medium text-xl lg:text-2xl leading-[29px] text-[#393E50] mb-4 text-center lg:text-left"
+              >
+                Close your account
+              </h2>
+              <p class="font-normal text-sm text-[#393e50]/60 mb-6 lg:mb-10">
+                If you want to close your account, first download a copy of your
+                purchased product. And if you close the account, you will not
+                get any updates later.
+              </p>
+              <div class="flex items-center justify-center lg:justify-end">
+                <button
+                  type="submit"
+                  class="bg-[#C5143326] py-[10px] px-[20px] mt-[37px] lg:mt-0 rounded-xl border border-[#C5143333] font-medium text-sm text-[#C51433]"
+                >
+                  Edit Password
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="../assets/js/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/alpine.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
