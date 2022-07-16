@@ -10,9 +10,12 @@
   <body class="antialiased">
     <div
       id="view"
-      class="h-full container mx-auto grid lg:grid-flow-col lg:gap-4"
+      class="h-full container mx-auto grid lg:grid-flow-col lg:gap-4 grid-cols-12"
     >
-      <div id="sidebar" class="bg-white xl:h-screen overflow-x-auto">
+      <div
+        id="sidebar"
+        class="bg-white xl:h-screen overflow-x-auto col-span-12 lg:col-span-2"
+      >
         <div class="space-y-6 md:space-y-10 mt-10 space-x-0 xl:space-x-20">
           <div id="profile" class="space-y-3 hidden lg:block">
             <img
@@ -34,7 +37,7 @@
 
           <div
             id="menu"
-            class="flex flex-row lg:flex-col py-5 md:justify-center ml-0"
+            class="flex flex-row lg:flex-col py-5 md:justify-center !ml-auto"
           >
             <a
               href="#"
@@ -223,7 +226,7 @@
           </div>
         </div>
       </div>
-      <div class="main_body">
+      <div class="main_body col-span-12 lg:col-span-10">
         <div
           style="
             height: calc(100% - 1rem);
@@ -232,7 +235,6 @@
               rgba(2, 111, 134, 0.05) 14.17%,
               rgba(0, 149, 192, 0.05) 85.87%
             );
-            margin-left: 0px;
           "
           class="w-full py-8 lg:py-16 px-0 lg:px-28 body_mob"
         >
