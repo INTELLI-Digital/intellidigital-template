@@ -38,6 +38,9 @@ module.exports = {
         accent: "#ECF1F4",
         light: "#FAFCFE",
       },
+      backgroundImage: {
+        'dotted-bg': "url('./assets/images/about_us/dotted.png')",
+    },
     },
   },
   plugins: [require("@tailwindcss/forms")({

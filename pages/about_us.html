@@ -10,7 +10,7 @@
   <body>
     <section class="creativity_part mt-2">
       <div class="container mx-auto">
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between flex-col lg:flex-row">
           <div class="expert">
             <h2
               style="
@@ -24,52 +24,58 @@
                 background-clip: text;
                 text-fill-color: transparent;
               "
-              class="font-medium text-[40px] leading-[48px] mb-6"
+              class="font-medium text-[24px] text-center lg:text-left lg:text-[40px] leading-[29px] lg:leading-[48px] mb-6"
             >
               We are the expert of <br />
               Creativity and Mindfulness
             </h2>
             <p class="font-normal text-base leading-6 text-[#393e50]/40">
               In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to <br />
+              text commonly used to <br class="hidden lg:block" />
               demonstrate the visual
             </p>
             <div class="coundown mt-16">
-              <ul class="flex items-center gap-20">
+              <ul class="flex items-center gap-[33px] lg:gap-20">
                 <li class="text-center">
                   <h3
-                    class="font-bold text-[#393E50] text-[40px] leading-[48px]"
+                    class="font-bold text-[#393E50] text-[24px] lg:text-[40px] leading-[29px] lg:leading-[48px]"
                   >
                     12,565
                   </h3>
-                  <p class="font-normal text-[#393E50]/40 text-2xl leading-[]">
+                  <p
+                    class="font-normal text-[#393E50]/40 text-base lg:text-2xl leading-[19px] lg:leading-[29px]"
+                  >
                     Peoples trust us
                   </p>
                 </li>
                 <li class="text-center">
                   <h3
-                    class="font-bold text-[#393E50] text-[40px] leading-[48px]"
+                    class="font-bold text-[#393E50] text-[24px] lg:text-[40px] leading-[29px] lg:leading-[48px]"
                   >
                     235
                   </h3>
-                  <p class="font-normal text-[#393E50]/40 text-2xl leading-[]">
+                  <p
+                    class="font-normal text-[#393E50]/40 text-base lg:text-2xl leading-[19px] lg:leading-[29px]"
+                  >
                     Employes
                   </p>
                 </li>
                 <li class="text-center">
                   <h3
-                    class="font-bold text-[#393E50] text-[40px] leading-[48px]"
+                    class="font-bold text-[#393E50] text-[24px] lg:text-[40px] leading-[29px] lg:leading-[48px]"
                   >
                     1m+
                   </h3>
-                  <p class="font-normal text-[#393E50]/40 text-2xl leading-[]">
+                  <p
+                    class="font-normal text-[#393E50]/40 text-base lg:text-2xl leading-[19px] lg:leading-[29px]"
+                  >
                     Digital assets
                   </p>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="map">
+          <div class="map mt-10 lg:mt-0">
             <img src="../assets/images/about_us/map.png" alt="" />
           </div>
         </div>
@@ -78,117 +84,75 @@
     <!-- expert part ends -->
 
     <!-- mission and vision -->
-    <section class="mission_vision_part mt-[136px]">
+    <section class="mission_vision_part mt-[83px] lg:mt-[136px]">
       <div class="container mx-auto">
-        <div class="flex items-center justify-between">
-          <div class="flag flex flex-wrap gap-4 basis-1/2 flex-col">
-            <!-- <div
-              style="
-                background: radial-gradient(
-                  97.75% 97.75% at 95% 5.5%,
-                  #79bdcc 0%,
-                  #005f7a 100%
-                );
-              "
-              class="mission py-[28px] rounded-[20px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)] max-w-[150px] flex items-center justify-center flex-col"
-            >
-              <img src="../assets/images/about_us/mission.png" alt="" />
-              <p class="font-medium text-xl text-white">Mission</p>
-            </div>
-            <div
-              style="
-                background: radial-gradient(
-                  97.75% 97.75% at 95% 5.5%,
-                  #79bdcc 0%,
-                  #005f7a 100%
-                );
-              "
-              class="flag py-[28px] rounded-[20px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)] max-w-[150px] flex items-center justify-center flex-col"
-            >
-              <img src="../assets/images/about_us/goal.png" alt="" />
-              <p class="font-medium text-xl text-white">GOAL</p>
-            </div>
-            <div
-              style="
-                background: radial-gradient(
-                  97.75% 97.75% at 95% 5.5%,
-                  #79bdcc 0%,
-                  #005f7a 100%
-                );
-              "
-              class="vision py-[28px] rounded-[20px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)] max-w-[150px] flex items-center justify-center flex-col"
-            >
-              <img src="../assets/images/about_us/vision.png" alt="" />
-              <p class="font-medium text-xl text-white">VISION</p>
-            </div> -->
-            <div
-              class="relative wrap overflow-hidden max-w-[360px] justify-center m-auto w-full"
-            >
-              <!-- left timeline -->
+        <div class="flex items-center justify-between flex-col lg:flex-row">
+          <div
+            class="grid grid-cols-6 grid-rows-2 lg:grid-rows-1 grid-flow-row lg:grid-flow-col gap-6 items-center mx-auto order-2 mt-10 lg:mt-0"
+          >
+            <div class="col-span-2 lg:col-span-6 row-span-2 lg:row-span-1">
               <div
-                class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+                style="
+                  background: radial-gradient(
+                    97.75% 97.75% at 95% 5.5%,
+                    #79bdcc 0%,
+                    #005f7a 100%
+                  );
+                "
+                class="mission py-[28px] px-[35px] rounded-[20px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)] flex items-center justify-center flex-col order-1"
               >
-                <div class="z-20 flex items-center order-1"></div>
-                <div
-                  style="
-                    background: radial-gradient(
-                      97.75% 97.75% at 95% 5.5%,
-                      #79bdcc 0%,
-                      #005f7a 100%
-                    );
-                  "
-                  class="mission py-[28px] rounded-[20px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)] max-w-[150px] w-full flex items-center justify-center flex-col order-1"
-                >
-                  <img src="../assets/images/about_us/mission.png" alt="" />
-                  <p class="font-medium text-xl text-white">Mission</p>
-                </div>
+                <img
+                  class="h-6 lg:h-[55px]"
+                  src="../assets/images/about_us/mission.png"
+                  alt=""
+                />
+                <p class="font-medium text-sm lg:text-xl text-white">Mission</p>
               </div>
-
-              <!-- right timeline -->
+            </div>
+            <div class="col-span-2 lg:col-span-6 row-span-1 lg:row-span-1">
               <div
-                class="mb-8 flex justify-between items-center w-full right-timeline"
+                style="
+                  background: radial-gradient(
+                    97.75% 97.75% at 95% 5.5%,
+                    #79bdcc 0%,
+                    #005f7a 100%
+                  );
+                "
+                class="mission py-[28px] px-[35px] rounded-[20px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)] flex items-center justify-center flex-col order-1"
               >
-                <div class="order-1 w-5/12"></div>
-                <div class="z-20 flex items-center order-1"></div>
-                <div
-                  style="
-                    background: radial-gradient(
-                      97.75% 97.75% at 95% 5.5%,
-                      #79bdcc 0%,
-                      #005f7a 100%
-                    );
-                  "
-                  class="mission py-[28px] rounded-[20px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)] max-w-[150px] w-full flex items-center justify-center flex-col order-1"
-                >
-                  <img src="../assets/images/about_us/goal.png" alt="" />
-                  <p class="font-medium text-xl text-white">GOAL</p>
-                </div>
+                <img
+                  class="h-6 lg:h-[55px]"
+                  src="../assets/images/about_us/vision.png"
+                  alt=""
+                />
+                <p class="font-medium text-sm lg:text-xl text-white">VISION</p>
               </div>
-
-              <!-- left timeline -->
+            </div>
+            <div class="col-span-2 lg:col-span-6 row-span-2 lg:row-span-2">
               <div
-                class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+                style="
+                  background: radial-gradient(
+                    97.75% 97.75% at 95% 5.5%,
+                    #79bdcc 0%,
+                    #005f7a 100%
+                  );
+                "
+                class="mission py-[28px] px-[35px] rounded-[20px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)] flex items-center justify-center flex-col order-1"
               >
-                <div class="order-1 w-5/12"></div>
-                <div class="z-20 flex items-center order-1"></div>
-                <div
-                  style="
-                    background: radial-gradient(
-                      97.75% 97.75% at 95% 5.5%,
-                      #79bdcc 0%,
-                      #005f7a 100%
-                    );
-                  "
-                  class="mission py-[28px] rounded-[20px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)] max-w-[150px] w-full flex items-center justify-center flex-col order-1"
-                >
-                  <img src="../assets/images/about_us/vision.png" alt="" />
-                  <p class="font-medium text-xl text-white">VISION</p>
-                </div>
+                <img
+                  class="h-6 lg:h-[55px]"
+                  src="../assets/images/about_us/goal.png"
+                  alt=""
+                />
+                <p class="font-medium text-sm lg:text-xl text-white">GOAL</p>
               </div>
             </div>
           </div>
-          <div class="mission_vision_text basis-1/2">
-            <h2 class="font-medium text-[40px] text-[#393E50]">
+
+          <div class="mission_vision_text basis-1/2 order-1 lg:order-2">
+            <h2
+              class="font-medium text-[24px] lg:text-[40px] text-[#393E50] text-center lg:text-left mb-5 lg:mb-6"
+            >
               Our Mission & vision
             </h2>
             <p class="font-normal text-base text-[#393E50]/40">
@@ -206,6 +170,454 @@
       </div>
     </section>
     <!-- mission and vision -->
+
+    <!-- grow your business -->
+    <div class="business_part mt-[72px]">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12">
+          <div class="col-span-12 lg:col-span-5">
+            <h2
+              class="font-medium text-[23px] lg:text-[40px] text-center lg:text-left text-[#393e50] leading-[29px] lg:leading-[48px] mb-10"
+            >
+              Grow you business with us
+            </h2>
+            <ul class="business_item">
+              <li class="pl-5 mb-10">
+                <h3
+                  class="flex items-center justify-start gap-[10px] font-medium text-lg leading-5 text-[#393e50] mb-[10px]"
+                >
+                  Create your Identity
+                </h3>
+                <p class="font-normal text-base leading-5 text-[#393E50]/60">
+                  Create your company identity, make it diffrenet from others.
+                  From thousand of logo choose your favourite. Or if you have
+                  any preference, just share it with us, our experties will make
+                  it for you.
+                </p>
+              </li>
+              <li class="pl-5 mb-10">
+                <h3
+                  class="flex items-center justify-start gap-[10px] font-medium text-lg leading-5 text-[#393e50] mb-[10px]"
+                >
+                  Bring the brand live
+                </h3>
+                <p class="font-normal text-base leading-5 text-[#393E50]/60">
+                  Doing business but not having a website is unthinkable at this
+                  time. In modern times, marketing is not as big as websites.
+                  Spell your brand website now. Be it e-commerce or landing
+                  page. We have digital stores for you.
+                </p>
+              </li>
+              <li class="pl-5">
+                <h3
+                  class="flex items-center justify-start gap-[10px] font-medium text-lg leading-5 text-[#393e50] mb-[10px]"
+                >
+                  Make it socially bigger
+                </h3>
+                <p class="font-normal text-base leading-5 text-[#393E50]/60">
+                  Social media is a great influencer. There is no comparison to
+                  social media when it comes to growing a business. Create
+                  banners or posters for branding through social media or choose
+                  the desired template
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-12 lg:col-span-7 mt-10 lg:mt-0">
+            <img
+              class="ml-auto"
+              src="../assets/images/about_us/progressbar.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- grow your business -->
+
+    <!-- Best Digital Service -->
+    <div class="digital_service mt-[138px] mb-[112px]">
+      <div class="container">
+        <h2
+          class="font-medium text-lg lg:text-[40px] text-[#393e50] text-center leading-[29px] lg:leading-[48px] mb-[30px]"
+        >
+          Best digital sevices in One place
+        </h2>
+        <p
+          class="font-normal text-base leading-5 text-center text-[#393e50]/60"
+        >
+          In publishing and graphic design, Lorem ipsum is a placeholder text
+          commonly used to demonstrate the visual form of
+          <br class="hidden lg:block" />
+          a document or a typeface without relying on meaningful content.
+        </p>
+
+        <div
+          class="digital_service mt-[50px] grid grid-rows-1 lg:grid-rows-4 grid-cols-12 grid-flow-dense lg:grid-flow-col gap-6"
+        >
+          <div
+            class="digital_item flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 shadow-[0_8px_20px_rgba(23,119,139,0.1)] px-[10px] py-[20px] col-span-12 lg:col-span-4 row-span-1 lg:row-span-2"
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  248.46deg,
+                  #026f86 14.17%,
+                  #0095c0 85.87%
+                );
+              "
+              class="icon max-w-[52px] h-[52px] flex items-center justify-center rounded-[4px] w-full"
+            >
+              <img src="../assets/images/about_us/PaintBucket.png" alt="" />
+            </div>
+            <div class="ttl_p basis-9/12">
+              <h2
+                class="font-medium text-lg leading-5 text-[#393e50] mb-5 text-center lg:text-left"
+              >
+                Creative Design
+              </h2>
+              <p
+                class="font-normal text-base leading-5 text-[#393e50]/60 text-justify lg:text-left"
+              >
+                We have all kinds of website templates, e-commerce, admin
+                dashboard and UI/UX templates including app design, development.
+              </p>
+            </div>
+          </div>
+          <div
+            class="digital_item flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 shadow-[0_8px_20px_rgba(23,119,139,0.1)] px-[10px] py-[20px] col-span-12 lg:col-span-4 row-span-2"
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  248.46deg,
+                  #026f86 14.17%,
+                  #0095c0 85.87%
+                );
+              "
+              class="icon max-w-[52px] h-[52px] flex items-center justify-center rounded-[4px] w-full"
+            >
+              <img src="../assets/images/about_us/Package.png" alt="" />
+            </div>
+            <div class="ttl_p basis-9/12">
+              <h2
+                class="font-medium text-lg leading-5 text-[#393e50] mb-5 text-center lg:text-left"
+              >
+                3D Assets
+              </h2>
+              <p
+                class="font-normal text-base leading-5 text-[#393e50]/60 text-justify lg:text-left"
+              >
+                We have all kinds of website templates, e-commerce, admin
+                dashboard and UI/UX templates including app design, development.
+              </p>
+            </div>
+          </div>
+          <div
+            class="digital_item flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 shadow-[0_8px_20px_rgba(23,119,139,0.1)] px-[10px] py-[20px] col-span-12 lg:col-span-4 row-span-2"
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  248.46deg,
+                  #026f86 14.17%,
+                  #0095c0 85.87%
+                );
+              "
+              class="icon max-w-[52px] h-[52px] flex items-center justify-center rounded-[4px] w-full"
+            >
+              <img src="../assets/images/about_us/TerminalWindow.png" alt="" />
+            </div>
+            <div class="ttl_p basis-9/12">
+              <h2
+                class="font-medium text-lg leading-5 text-[#393e50] mb-5 text-center lg:text-left"
+              >
+                Technologies
+              </h2>
+              <p
+                class="font-normal text-base leading-5 text-[#393e50]/60 text-justify lg:text-left"
+              >
+                We have all kinds of website templates, e-commerce, admin
+                dashboard and UI/UX templates including app design, development.
+              </p>
+            </div>
+          </div>
+          <div
+            class="digital_item flex items-center lg:items-start justify-center flex-col lg:flex-row gap-6 shadow-[0_8px_20px_rgba(23,119,139,0.1)] px-[10px] py-[20px] col-span-12 lg:col-span-4 row-span-2"
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  248.46deg,
+                  #026f86 14.17%,
+                  #0095c0 85.87%
+                );
+              "
+              class="icon max-w-[52px] h-[52px] flex items-center justify-center rounded-[4px] w-full"
+            >
+              <img src="../assets/images/about_us/wind.svg" alt="" />
+            </div>
+            <div class="ttl_p basis-9/12">
+              <h2
+                class="font-medium text-lg leading-5 text-[#393e50] mb-5 text-center lg:text-left"
+              >
+                Motion Videos
+              </h2>
+              <p
+                class="font-normal text-base leading-5 text-[#393e50]/60 text-justify lg:text-left"
+              >
+                We have all kinds of website templates, e-commerce, admin
+                dashboard and UI/UX templates including app design, development.
+              </p>
+            </div>
+          </div>
+          <div
+            class="digital_item flex items-center lg:items-start justify-center flex-col gap-6 shadow-[0_8px_20px_rgba(23,119,139,0.1)] px-[10px] py-[20px] row-span-4 col-span-12 lg:col-span-4"
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  248.46deg,
+                  #026f86 14.17%,
+                  #0095c0 85.87%
+                );
+              "
+              class="icon max-w-[52px] h-[52px] flex items-center justify-center rounded-[4px] w-full"
+            >
+              <img src="../assets/images/about_us/Layout.png" alt="" />
+            </div>
+            <div class="ttl_p basis-9/12">
+              <h2
+                class="font-medium text-lg leading-5 text-[#393e50] mb-5 text-center lg:text-left"
+              >
+                Presentation
+              </h2>
+              <p
+                class="font-normal text-base leading-5 text-[#393e50]/60 text-justify lg:text-left"
+              >
+                We have all kinds of website templates, e-commerce, admin
+                dashboard and UI/UX templates including app design, development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Best Digital Service -->
+
+    <!-- join Our Team -->
+    <div
+      class="team_part bg-dotted-bg bg-center bg-cover bg-no-repeat py-[82px]"
+    >
+      <div class="container text-center">
+        <h2
+          class="font-medium text-2xl lg:text-[40px] leading-[29px] lg:leading-[48px] text-[#393E50] mb-5"
+        >
+          Want to join our team?
+        </h2>
+        <p class="font-normal text-base text-[#393E50]/40 leading-5 mb-10">
+          Join us if you want to work with our skilled, talented team.
+        </p>
+        <a
+          style="
+            background: linear-gradient(
+              248.46deg,
+              #026f86 14.17%,
+              #0095c0 85.87%
+            );
+          "
+          class="font-medium text-sm text-white leading-[17px] px-[71px] py-[13px] rounded-lg"
+          href="#"
+          >Join us</a
+        >
+      </div>
+    </div>
+    <!-- join Our Team -->
+
+    <!-- What they think about us -->
+    <div class="about_us_part py-[93px]">
+      <div class="container">
+        <div
+          id="default-carousel"
+          class="grid grid-cols-12"
+          data-carousel="static"
+        >
+          <div class="col-span-12 lg:col-span-7">
+            <h2
+              class="font-medium text-2xl lg:text-[40px] leading-[48px] text-[#393e50] mb-10"
+            >
+              What they think about us?
+            </h2>
+            <div class="slider_button relative hidden lg:block">
+              <!-- Slider controls -->
+              <button
+                type="button"
+                class="flex absolute top-0 left-0 z-30 justify-center items-center cursor-pointer"
+                data-carousel-prev
+              >
+                <span
+                  class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white shadow-[-5px_5px_20px_rgba(0,0,0,0.1)] rounded-[20px]"
+                >
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.5 12.0015L1.5 7.00146L6.5 2.00146"
+                      stroke="#393E50"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span class="hidden">Previous</span>
+                </span>
+              </button>
+              <button
+                type="button"
+                class="flex absolute top-0 left-[10%] z-30 justify-center items-center cursor-pointer"
+                data-carousel-next
+              >
+                <span
+                  class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white shadow-[-5px_5px_20px_rgba(0,0,0,0.1)] rounded-[20px]"
+                >
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5 2.00146L6.5 7.00146L1.5 12.0015"
+                      stroke="#393E50"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span class="hidden">Next</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-5">
+            <div class="about_slider">
+              <div
+                class="slider_item bg-white shadow-[0_10px_20px_rgba(0,0,0,0.1)] rounded-[10px] p-[10px] lg:p-10"
+              >
+                <div
+                  class="member_img block lg:hidden flex items-center justify-center mb-[10px]"
+                >
+                  <img
+                    class="w-[70px] h-[70px]"
+                    src="../assets/images/about_us/avatar.png"
+                    alt=""
+                  />
+                </div>
+                <p
+                  class="font-normal text-base text-[#393e50]/60 leading-[19px] mb-10 text-justify"
+                >
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface without relying on meaningful content.
+                  Lorem ipsum may be used as a placeholder before the final copy
+                  is
+                </p>
+                <div
+                  class="member flex items-center justify-center lg:justify-start gap-4 text-center lg:text-left"
+                >
+                  <div class="member_img hidden lg:block">
+                    <img
+                      class="w-[70px] h-[70px]"
+                      src="../assets/images/about_us/avatar.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="member_ttl_p">
+                    <h3
+                      class="font-normal text-2xl text-[#393e50] leading-[29px] mb-[5px]"
+                    >
+                      Sadman Sakib Jisan
+                    </h3>
+                    <p
+                      class="font-normal text-sm text-[#393E50]/40 leading-[17px]"
+                    >
+                      Developer
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="slider_button block lg:hidden mt-10 flex items-center justify-center gap-4"
+            >
+              <!-- Slider controls -->
+              <button
+                type="button"
+                class="flex z-30 justify-center items-center cursor-pointer"
+                data-carousel-prev
+              >
+                <span
+                  class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white shadow-[-5px_5px_20px_rgba(0,0,0,0.1)] rounded-[20px]"
+                >
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.5 12.0015L1.5 7.00146L6.5 2.00146"
+                      stroke="#393E50"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span class="hidden">Previous</span>
+                </span>
+              </button>
+              <button
+                type="button"
+                class="flex z-30 justify-center items-center cursor-pointer"
+                data-carousel-next
+              >
+                <span
+                  class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white shadow-[-5px_5px_20px_rgba(0,0,0,0.1)] rounded-[20px]"
+                >
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5 2.00146L6.5 7.00146L1.5 12.0015"
+                      stroke="#393E50"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span class="hidden">Next</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- What they think about us -->
 
     <!-- js -->
     <script src="../assets/js/jquery-1.11.0.min.js"></script>
