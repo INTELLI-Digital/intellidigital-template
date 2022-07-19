@@ -116,6 +116,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* grow your business */
 
+/* best product */
+
+.best_product_part .img .overlay {
+  top: 100%;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+.best_product_part .img:hover .overlay {
+  top: 0;
+  transition: all linear 0.4s;
+}
+/* best product */
+
 /* responsive start */
 @media (max-width: 1023px) {
   .body_mob {

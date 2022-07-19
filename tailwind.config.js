@@ -40,6 +40,7 @@ module.exports = {
       },
       backgroundImage: {
         'dotted-bg': "url('./assets/images/about_us/dotted.png')",
+        'blog-bg': "url('./assets/images/blog/blog_bg.png')"
     },
     },
   },
