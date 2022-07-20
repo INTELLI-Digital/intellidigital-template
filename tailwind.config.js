@@ -42,7 +42,8 @@ module.exports = {
         'dotted-bg': "url('./assets/images/about_us/dotted.png')",
         'blog-bg': "url('./assets/images/blog/blog_bg.png')",
         'single-blog': "url('./assets/images/single_blog/single_bg.png')",
-        'single-blog-mob': "url('./assets/images/single_blog/single_bg_mob.png')"
+        'single-blog-mob': "url('./assets/images/single_blog/single_bg_mob.png')",
+        'prof-img': './assets/images/profile/avatar.png',
     },
     },
   },
