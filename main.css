@@ -10,7 +10,7 @@
   }
 }
 /* tailwind css */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,7 +22,7 @@ a {
 
 ul {
   list-style-type: none;
-}
+} */
 
 /* profile nav */
 #menu a:hover {
@@ -65,7 +65,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* custom input feild */
 
-/* custon checkbox */
+/* custon checkbox for login page */
 .styled-checkbox {
   position: absolute;
   opacity: 0;
@@ -92,9 +92,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .styled-checkbox:hover + label:before {
   background: linear-gradient(248.46deg, #026f86 14.17%, #0095c0 85.87%);
 }
-.styled-checkbox:focus + label:before {
-  /* box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12); */
-}
+
 .styled-checkbox:checked + label:before {
   background: linear-gradient(248.46deg, #026f86 14.17%, #0095c0 85.87%);
 }
@@ -110,7 +108,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     4px -6px 0 white, 4px -8px 0 white;
   transform: rotate(45deg);
 }
-/* custon checkbox */
+/* custon checkbox for login page  */
 
 /* grow your business */
 .business_part ul {
