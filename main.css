@@ -23,6 +23,8 @@ a {
 ul {
   list-style-type: none;
 }
+
+/* profile nav */
 #menu a:hover {
   color: #0095c0;
 }
@@ -35,6 +37,7 @@ ul {
 .active svg path {
   stroke: #0095c0;
 }
+/* profile nav */
 /* common css */
 
 input::-webkit-calendar-picker-indicator {
