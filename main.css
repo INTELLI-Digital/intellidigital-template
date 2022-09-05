@@ -145,6 +145,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   -o-transform: translateY(-50%);
 }
 
+/* payment method */
+
+.button input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+.button input[type="radio"]:checked + label {
+  background: rgba(0, 149, 192, 0.07);
+  border: 1px solid rgba(0, 149, 192, 0.6);
+  border-radius: 4px;
+}
+
+.button label {
+  cursor: pointer;
+  z-index: 90;
+  line-height: 1.8em;
+}
+/* payment method */
+
 /* responsive start */
 @media (max-width: 1023px) {
   .body_mob {
