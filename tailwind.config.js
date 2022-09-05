@@ -44,7 +44,7 @@ module.exports = {
         'single-blog': "url('./assets/images/single_blog/single_bg.png')",
         'single-blog-mob': "url('./assets/images/single_blog/single_bg_mob.png')",
     },
-    
+
     },
   },
   plugins: [require("@tailwindcss/forms")({

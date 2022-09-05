@@ -119,6 +119,35 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* best product */
 
+.effect .col-span-6:nth-child(2n + 1) {
+  background-color: red;
+}
+/* .effect .col-span-6:nth-child(even) {
+  background-color: rgb(251, 255, 0);
+} */
+.my_class {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.select {
+  position: relative;
+  min-width: 200px;
+}
+.select svg {
+  position: absolute;
+  right: 19px;
+  top: calc(50% - 3px);
+  stroke-width: 2px;
+  stroke: #9098a9;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.select:hover + svg {
+  stroke: #07f;
+}
 /* responsive start */
 @media (max-width: 1023px) {
   .body_mob {
