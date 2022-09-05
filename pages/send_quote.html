@@ -8,24 +8,21 @@
     <link rel="stylesheet" href="../main.css" />
   </head>
   <body class="antialiased">
-    <div
-      id="view"
-      class="h-full container mx-auto grid lg:grid-flow-col lg:gap-4 grid-cols-12"
-    >
-      <div class="main_body col-span-12">
-        <div class="w-full py-8 lg:py-16 px-0 lg:px-28 body_mob">
-          <!-- tab 1 -->
+    <div id="view" class="container">
+      <div class="grid grid-cols-12">
+        <div class="col-span-12">
           <div class="space-y-1 lg:space-y-6">
             <h3
-              class="font-medium text-2xl text-center lg:text-[36px] leading-[43px] text-[#393E50]"
+              class="font-semibold text-2xl text-center lg:text-[36px] leading-[43px] text-[#393E50] mb-10"
             >
               Send us a <span class="text-[#0095c0]">Quote</span>
             </h3>
-
             <div class="bg-white rounded-2xl">
               <form action="">
-                <div class="grid grid-cols-12 gap-10">
-                  <div class="input_feild col-span-6">
+                <div class="grid grid-cols-12 gap-0 md:gap-10">
+                  <div
+                    class="input_feild col-span-12 md:col-span-6 mb-3 md:mb-0"
+                  >
                     <div
                       class="form-item flex items-start justify-between flex-col"
                     >
@@ -43,74 +40,81 @@
                       />
                     </div>
                   </div>
-                  <div class="input_feild col-span-6">
+                  <div
+                    class="input_feild col-span-12 md:col-span-6 mb-3 md:mb-0"
+                  >
                     <div
                       class="form-item flex items-start justify-between flex-col"
                     >
                       <label
                         class="font-semibold text-sm lg:text-base leading-[19px] text-[#393E50] mb-2 after:content-['*'] after:ml-0.5 after:text-red-500"
-                        for="f_name"
+                        for="email"
                         >Email</label
                       >
                       <input
                         class="border w-full py-3 pl-5 border-[#393E5033] rounded-[10px] text-sm lg:text-base custom_input"
-                        type="text"
-                        name="f_name"
-                        id="f_name"
+                        type="email"
+                        name="email"
+                        id="email"
                         placeholder="Type your mail address hare "
                       />
                     </div>
                   </div>
-                  <div class="input_feild col-span-6">
+                  <div
+                    class="input_feild col-span-12 md:col-span-6 mb-3 md:mb-0"
+                  >
                     <div
                       class="form-item flex items-start justify-between flex-col"
                     >
                       <label
                         class="font-semibold text-sm lg:text-base leading-[19px] text-[#393E50] mb-2"
-                        for="f_name"
+                        for="phone"
                         >Phone Number</label
                       >
                       <input
                         class="border w-full py-3 pl-5 border-[#393E5033] rounded-[10px] text-sm lg:text-base custom_input"
                         type="text"
-                        name="f_name"
-                        id="f_name"
+                        name="phone"
+                        id="phone"
                         placeholder="+123"
                       />
                     </div>
                   </div>
-                  <div class="input_feild col-span-6">
+                  <div
+                    class="input_feild col-span-12 md:col-span-6 mb-3 md:mb-0"
+                  >
                     <div
                       class="form-item flex items-start justify-between flex-col"
                     >
                       <label
                         class="font-semibold text-sm lg:text-base leading-[19px] text-[#393E50] mb-2"
-                        for="f_name"
+                        for="link"
                         >Website Address</label
                       >
                       <input
                         class="border w-full py-3 pl-5 border-[#393E5033] rounded-[10px] text-sm lg:text-base custom_input"
-                        type="text"
-                        name="f_name"
-                        id="f_name"
+                        type="url"
+                        name="link"
+                        id="link"
                         placeholder=""
                       />
                     </div>
                   </div>
-                  <div class="input_feild col-span-6">
+                  <div
+                    class="input_feild col-span-12 md:col-span-6 mb-3 md:mb-0"
+                  >
                     <div
                       class="form-item flex items-start justify-between flex-col"
                     >
                       <label
                         class="font-semibold text-sm lg:text-base leading-[19px] text-[#393E50] mb-2 after:content-['*'] after:ml-0.5 after:text-red-500"
-                        for="f_name"
+                        for="category"
                         >Services</label
                       >
-
                       <div class="select w-full">
                         <select
                           name="cars"
-                          id="cars"
+                          id="category"
                           class="border w-full py-3 pl-5 border-[#393E5033] rounded-[10px] text-sm lg:text-base custom_input my_class"
                         >
                           <option value="volvo" selected>
@@ -140,7 +144,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="input_feild col-span-6">
+                  <div
+                    class="input_feild col-span-12 md:col-span-6 mb-3 md:mb-0"
+                  >
                     <div
                       class="form-item flex items-start justify-between flex-col"
                     >
@@ -158,18 +164,18 @@
                       />
                     </div>
                   </div>
-                  <div class="input_feild col-span-12">
+                  <div class="input_feild col-span-12 mb-3 md:mb-0">
                     <div
                       class="form-item flex items-start justify-between flex-col"
                     >
                       <label
                         class="font-semibold text-sm lg:text-base leading-[19px] text-[#393E50] mb-2 after:content-['*'] after:ml-0.5 after:text-red-500"
-                        for="f_name"
+                        for="Instructions"
                         >Your Instructions</label
                       >
                       <textarea
-                        name=""
-                        id=""
+                        name="Instructions"
+                        id="Instructions"
                         cols="30"
                         rows="10"
                         placeholder="Type..."
@@ -177,7 +183,7 @@
                       ></textarea>
                     </div>
                   </div>
-                  <div class="input_feild col-span-12">
+                  <div class="input_feild col-span-6 mt-4 md:col-span-12">
                     <div
                       class="form-item flex items-start justify-between flex-col"
                     >
@@ -231,13 +237,13 @@
                       </label>
                     </div>
                   </div>
-                  <div class="input_feild col-span-12">
+                  <div class="input_feild col-span-6 mt-4 md:col-span-12">
                     <div
                       class="form-item flex items-center justify-between flex-col"
                     >
                       <button
                         type="submit"
-                        class="bg-[#0095C0] text-white text-sm font-normal leading-4 py-2 px-16 rounded-md"
+                        class="bg-[#0095C0] text-white text-sm font-normal leading-4 py-3 md:py-2 px-16 rounded-md"
                       >
                         Submit
                       </button>
@@ -247,7 +253,6 @@
               </form>
             </div>
           </div>
-          <!-- tab 1 -->
         </div>
       </div>
     </div>

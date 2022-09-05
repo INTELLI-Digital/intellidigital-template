@@ -128,26 +128,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .my_class {
   appearance: none;
   -webkit-appearance: none;
+  cursor: pointer;
 }
 
 .select {
   position: relative;
-  min-width: 200px;
 }
 .select svg {
   position: absolute;
   right: 19px;
-  top: calc(50% - 3px);
-  stroke-width: 2px;
-  stroke: #9098a9;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  pointer-events: none;
+  top: calc(50% - 0px);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
-.select:hover + svg {
-  stroke: #07f;
-}
+
 /* responsive start */
 @media (max-width: 1023px) {
   .body_mob {
