@@ -75,35 +75,35 @@
       >
         <!-- tabpart -->
         <div
-          class="flex items-center justify-center flex-wrap px-4 py-5 gap-6 lg:gap-12"
+          class="flex items-center justify-center flex-wrap px-4 py-5 gap-6 lg:gap-12 bg-white w-full shadow-[0px_14.5px_20px_-28px_rgba(0,0,0,1)]"
         >
           <a
-            class="text-sm"
-            :class="{'z-20 rounded-[43px] font-bold text-white text-base lg:text-xl leading-[28px] bg-[#FF765B] py-[10px] px-[19px] lg:px-6': tab === 1,'  text-black/[19%] font-normal text-base lg:text-xl leading-[22px] lg:leading-[28px]': tab !== 1}"
+            class="font-normal text-base lg:text-lg leading-[22px] lg:leading-5 z-20"
+            :class="{' text-[#FF765B] ': tab === 1,'  text-black': tab !== 1}"
             href="#"
             @click.prevent="tab = 1"
           >
             All
           </a>
           <a
-            class="text-sm"
-            :class="{'z-20 rounded-[43px] font-bold text-white text-base lg:text-xl leading-[22px] lg:leading-[28px] bg-[#FF765B] py-3 px-[19px] lg:px-6': tab === 2, ' text-black/[19%] font-normal text-base lg:text-xl leading-[22px] lg:leading-[28px]': tab !== 2}"
+            class="font-normal text-base lg:text-lg leading-[22px] lg:leading-5 z-20"
+            :class="{'text-[#FF765B]': tab === 2, ' text-black': tab !== 2}"
             href="#"
             @click.prevent="tab = 2"
           >
             Product & Feature Update
           </a>
           <a
-            class="text-sm"
-            :class="{'z-20 rounded-[43px] font-bold text-white text-base lg:text-xl leading-[22px] lg:leading-[28px] bg-[#FF765B] py-3 px-[19px] lg:px-6': tab === 3, '  text-black/[19%] font-normal text-base lg:text-xl leading-[22px] lg:leading-[28px]': tab !== 3}"
+            class="font-normal text-base lg:text-lg leading-[22px] lg:leading-5 z-20"
+            :class="{'text-[#FF765B]': tab === 3, '  text-black': tab !== 3}"
             href="#"
             @click.prevent="tab = 3"
           >
             Corporate Initiative
           </a>
           <a
-            class="text-sm"
-            :class="{'z-20 rounded-[43px] font-bold text-white text-base lg:text-xl leading-[22px] lg:leading-[28px] bg-[#FF765B] py-3 px-[19px] lg:px-6': tab === 4, '  text-black/[19%] font-normal text-base lg:text-xl leading-[22px] lg:leading-[28px]': tab !== 4}"
+            class="font-normal text-base lg:text-lg leading-[22px] lg:leading-5 z-20"
+            :class="{'text-[#FF765B]': tab === 4, 'text-black': tab !== 4}"
             href="#"
             @click.prevent="tab = 4"
           >
